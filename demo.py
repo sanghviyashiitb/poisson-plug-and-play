@@ -72,6 +72,7 @@ psnr =  -10*np.log10(np.mean((x_pnp-x)**2))
 print('Conventional PnP')
 print('Reconstruction PSNR: %0.3f, Elapsed Time: %0.3f s'%(psnr, s2-s1))
 
+plt.figure(figsize=(10,6))
 plt.subplot(1,3,1); plt.imshow(y, cmap='gray'); plt.axis('off')
 plt.title('Noisy and Blurred Image')
 
@@ -80,8 +81,8 @@ plt.title('Noisy and Blurred Image')
 
 plt.subplot(1,3,3); plt.imshow(x, cmap='gray'); plt.axis('off')
 plt.title('True Image')
+plt.savefig('results/demo.png', bbox_inches='tight', pad_inches=0.05)
 
 plt.show()
 
 
-plt.savefig('results/demo.png', bbox_inches='tight', pad_inches=0.05)
