@@ -82,3 +82,6 @@ plt.subplot(1,3,3); plt.imshow(x, cmap='gray'); plt.axis('off')
 plt.title('True Image')
 
 plt.show()
+
+
+plt.savefig('results/demo.png', bbox_inches='tight', pad_inches=0.05)
