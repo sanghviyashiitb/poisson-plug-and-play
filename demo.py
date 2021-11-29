@@ -77,7 +77,7 @@ plt.subplot(1,3,1); plt.imshow(y, cmap='gray'); plt.axis('off')
 plt.title('Noisy and Blurred Image')
 
 plt.subplot(1,3,2); plt.imshow(x_pnp, cmap='gray'); plt.axis('off')
-plt.title('Noisy and Blurred Image')
+plt.title('Plug and Play output')
 
 plt.subplot(1,3,3); plt.imshow(x, cmap='gray'); plt.axis('off')
 plt.title('True Image')
